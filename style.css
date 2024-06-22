@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "Slackey";
+  src: url("assets/fonts/Slackey.ttf") format("truetype");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FAEFD6;
+  font-family: "Open Sans", sans-serif;
+  color: #282727;
+  padding: 50px 50px;
+}
+
+h1 {
+  font-family: "Slackey", cursive;
+  font-size: 50px;
+  color: #FF8C37;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-family: "Slackey", cursive;
+  font-size: 30px;
+  color: #FF8C37;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-family: "Slackey", cursive;
+  font-size: 25px;
+  color: #FF8C37;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#options {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+#options h2 {
+  width: 100%;
+  text-align: left;
+}
+#options .option {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #0AAFB4;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px;
+  height: 450px;
+  width: 30%;
+  color: #ececec;
+}
+#options .option h3 {
+  color: #ececec;
+  margin-bottom: 10px;
+}
+#options .option .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+#options .option .description h3 {
+  width: 100%;
+}
+#options .option .description div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+#options .option .description input {
+  width: 40px;
+  background-color: #FAEFD6;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  color: #0AAFB4;
+}
+#options .option .description input:focus {
+  outline: none;
+}
+#options .option .illustration {
+  background-color: #FAEFD6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  padding: 20px;
+  width: 100%;
+  border-radius: 15px;
+}
+#options .option .illustration img {
+  object-fit: contain;
+  width: 100%;
+  height: 260px;
+  border-radius: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

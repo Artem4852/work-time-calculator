@@ -1,1 +1,121 @@
-Yes
+@font-face
+    font-family: 'Slackey'
+    src: url('assets/fonts/Slackey.ttf') format('truetype')
+
+$orange: #FF8C37
+$light-yellow: #FAEFD6
+$black: #282727
+$white: #ececec
+$light-blue: #0AAFB4
+$blue: #09878B
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+body
+    background-color: $light-yellow
+    font-family: 'Open Sans', sans-serif
+    color: $black
+    padding: 50px 50px
+
+h1
+    font-family: 'Slackey', cursive
+    font-size: 50px
+    color: $orange
+    text-align: center
+    margin-bottom: 50px
+
+h2
+    font-family: 'Slackey', cursive
+    font-size: 30px
+    color: $orange
+    text-align: left
+    margin-bottom: 20px
+
+h3
+    font-family: 'Slackey', cursive
+    font-size: 25px
+    color: $orange
+    text-align: left
+    margin-bottom: 20px
+
+p
+    font-size: 18px
+    font-weight: 500
+
+#options
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+    margin-bottom: 50px
+
+    h2
+        width: 100%
+        text-align: left
+
+    .option
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+
+        background-color: $light-blue
+        border-radius: 20px
+
+        margin: 20px
+        padding: 20px
+        height: 450px
+        width: 30%
+
+        color: $white
+
+        h3
+            color: $white
+            margin-bottom: 10px
+
+        .description
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            width: 100%
+            height: auto
+
+            h3
+                width: 100%
+
+            div
+                display: flex
+                justify-content: space-between
+
+                width: 100%
+                margin-bottom: 10px
+
+            input
+                width: 40px
+                background-color: $light-yellow
+                border: none
+                border-radius: 5px
+                padding: 5px
+                color: $light-blue
+
+            input:focus
+                outline: none
+
+        .illustration
+            background-color: $light-yellow
+
+            display: flex
+            justify-content: center
+            align-items: center
+            height: 300px
+            padding: 20px
+            width: 100%
+            border-radius: 15px
+            img
+                object-fit: contain
+                width: 100%
+                height: 260px
+                border-radius: 20px
