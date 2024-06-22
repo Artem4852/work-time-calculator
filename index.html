@@ -12,201 +12,351 @@
         <h2>#1 Choose the products you want</h2>
         <div class="option">
             <div class="description">
-                <h3>Pile of stickers</h3>
-                <div><p>Price: 1 ticket</p>
-                <input type="number" value="0" id="pile_of_stickers"></div>
+                <h3>Pile of random stickers</h3>
+                <div>
+                    <p>Price: 1 ticket</p>
+                    <div>
+                        <button id="calculate_button" onclick="AddNumber('pile_of_stickers')">+</button>
+                        <input type="number" value="0" id="pile_of_stickers" readonly min="0" max="10">
+                        <button id="calculate_button" onclick="SubtractNumber('pile_of_stickers')">-</button>
+                    </div>
+                </div>
             </div>
             <div class="illustration"><img src="assets/img/pile_of_stickers.png" alt="pile_of_stickers.png"></div>
         </div>
         <div class="option">
             <div class="description">
                 <h3>Sticker of your choice</h3>
-                <div><p>Price: 2 tickets</p>
-                <input type="number" value="0" id="sticker"></div>
+                <div>
+                    <p>Price: 2 tickets</p>
+                    <div>
+                        <button onclick="AddNumber('sticker')">+</button>
+                        <input type="number" value="0" id="sticker" readonly min="0" max="10">
+                        <button onclick="SubtractNumber('sticker')">-</button>
+                    </div>
+                </div>
             </div>
             <div class="illustration"><img src="assets/img/sticker.png" alt="sticker.png"></div>
         </div>
         <div class="option">
             <div class="description">
                 <h3>OpenAI credits</h3>
-                <div><p>Price: 4 tickets</p>
-                <input type="number" value="0" id="openai_credits"></div>
+                <div>
+                    <p>Price: 4 tickets</p>
+                    <div>
+                        <button onclick="AddNumber('openai_credits')">+</button>
+                        <input type="number" value="0" id="openai_credits" readonly min="0" max="1">
+                        <button onclick="SubtractNumber('openai_credits')">-</button>
+                    </div>
+                </div>
             </div>
             <div class="illustration"><img src="assets/img/openai_credits.png" alt="openai_credits.png"></div>
         </div>
         <div class="option">
             <div class="description">
                 <h3>Domain for 1 year</h3>
-                <div><p>Price: 4 tickets</p>
-                <input type="number" value="0" id="domain"></div>
+                <div>
+                    <p>Price: 4 tickets</p>
+                    <div>
+                        <button onclick="AddNumber('domain')">+</button>
+                        <input type="number" value="0" id="domain" readonly min="0" max="10">
+                        <button onclick="SubtractNumber('domain')">-</button>
+                    </div>
+                </div>
             </div>
             <div class="illustration"><img src="assets/img/domain.png" alt="domain.png"></div>
         </div>
         <div class="option">
             <div class="description">
                 <h3>Notebook from GitHub</h3>
-                <div><p>Price: 5 tickets</p>
-                <input type="number" value="0" id="notebook"></div>
+                <div>
+                    <p>Price: 5 tickets</p>
+                    <div>
+                        <button onclick="AddNumber('notebook')">+</button>
+                        <input type="number" value="0" id="notebook" readonly min="0" max="1">
+                        <button onclick="SubtractNumber('notebook')">-</button>
+                    </div>
+                </div>
             </div>
             <div class="illustration"><img src="assets/img/notebook.png" alt="notebook.png"></div>
         </div>
         <div class="option">
             <div class="description">
                 <h3>Logic Analyzer</h3>
-                <div><p>Price: 5 tickets</p>
-                <input type="number" value="0" id="logic_analyzer"></div>
+                <div>
+                    <p>Price: 5 tickets</p>
+                    <div>
+                        <button onclick="AddNumber('logic_analyzer')">+</button>
+                        <input type="number" value="0" id="logic_analyzer" readonly min="0" max="5">
+                        <button onclick="SubtractNumber('logic_analyzer')">-</button>
+                    </div>
+                </div>
             </div>
             <div class="illustration"><img src="assets/img/logic_analyzer.png" alt="logic_analyzer.png"></div>
         </div>
         <div class="option">
             <div class="description">
                 <h3>Breadboard + jumper wires</h3>
-                <div><p>Price: 6 tickets</p>
-                <input type="number" value="0" id="breadboard"></div>
+                <div>
+                    <p>Price: 6 tickets</p>
+                    <div>
+                        <button onclick="AddNumber('breadboard')">+</button>
+                        <input type="number" value="0" id="breadboard" readonly min="0" max="10">
+                        <button onclick="SubtractNumber('breadboard')">-</button>
+                    </div>
+                </div>
             </div>
             <div class="illustration"><img src="assets/img/breadboard.png" alt="breadboard.png"></div>
         </div>
         <div class="option">
             <div class="description">
                 <h3>Multimeter</h3>
-                <div><p>Price: 7 tickets</p>
-                <input type="number" value="0" id="multimeter"></div>
+                <div>
+                    <p>Price: 7 tickets</p>
+                    <div>
+                        <button onclick="AddNumber('multimeter')">+</button>
+                        <input type="number" value="0" id="multimeter" readonly min="0" max="5">
+                        <button onclick="SubtractNumber('multimeter')">-</button>
+                    </div>
+                </div>
             </div>
             <div class="illustration"><img src="assets/img/multimeter.png" alt="multimeter.png"></div>
         </div>
         <div class="option">
             <div class="description">
                 <h3>Arcade Ticket Counter (Timer)</h3>
-                <div><p>Price: 7 tickets</p>
-                <input type="number" value="0" id="arcade_ticket_counter"></div>
+                <div>
+                    <p>Price: 7 tickets</p>
+                    <div>
+                        <button onclick="AddNumber('arcade_ticket_counter')">+</button>
+                        <input type="number" value="0" id="arcade_ticket_counter" readonly min="0" max="1">
+                        <button onclick="SubtractNumber('arcade_ticket_counter')">-</button>
+                    </div>
+                </div>
             </div>
             <div class="illustration"><img src="assets/img/arcade_ticket_counter.png" alt="arcade_ticket_counter.png"></div>
         </div>
         <div class="option">
             <div class="description">
                 <h3>Soldering iron + solder</h3>
-                <div><p>Price: 8 tickets</p>
-                <input type="number" value="0" id="soldering_iron"></div>
+                <div>
+                    <p>Price: 8 tickets</p>
+                    <div>
+                        <button onclick="AddNumber('soldering_iron')">+</button>
+                        <input type="number" value="0" id="soldering_iron" readonly min="0" max="5">
+                        <button onclick="SubtractNumber('soldering_iron')">-</button>
+                    </div>
+                </div>
             </div>
             <div class="illustration"><img src="assets/img/soldering_iron.png" alt="soldering_iron.png"></div>
         </div>
         <div class="option">
             <div class="description">
                 <h3>Pinecil</h3>
-                <div><p>Price: 14 tickets</p>
-                <input type="number" value="0" id="pinecil"></div>
+                <div>
+                    <p>Price: 14 tickets</p>
+                    <div>
+                        <button onclick="AddNumber('pinecil')">+</button>
+                        <input type="number" value="0" id="pinecil" readonly min="0" max="1">
+                        <button onclick="SubtractNumber('pinecil')">-</button>
+                    </div>
+                </div>
             </div>
             <div class="illustration"><img src="assets/img/pinecil.png" alt="pinecil.png"></div>
         </div>
         <div class="option">
             <div class="description">
                 <h3>YubiKey</h3>
-                <div><p>Price: 15 tickets</p>
-                <input type="number" value="0" id="yubikey"></div>
+                <div>
+                    <p>Price: 15 tickets</p>
+                    <div>
+                        <button onclick="AddNumber('yubikey')">+</button>
+                        <input type="number" value="0" id="yubikey" readonly min="0" max="5">
+                        <button onclick="SubtractNumber('yubikey')">-</button>
+                    </div>
+                </div>
             </div>
             <div class="illustration"><img src="assets/img/yubikey.png" alt="yubikey.png"></div>
         </div>
         <div class="option">
             <div class="description">
                 <h3>GitHub Keycaps x8</h3>
-                <div><p>Price: 15 tickets</p>
-                <input type="number" value="0" id="github_keycaps"></div>
+                <div>
+                    <p>Price: 15 tickets</p>
+                    <div>
+                        <button onclick="AddNumber('github_keycaps')">+</button>
+                        <input type="number" value="0" id="github_keycaps" readonly min="0" max="1">
+                        <button onclick="SubtractNumber('github_keycaps')">-</button>
+                    </div>
+                </div>
             </div>
             <div class="illustration"><img src="assets/img/github_keycaps.png" alt="github_keycaps.png"></div>
         </div>
         <div class="option">
             <div class="description">
                 <h3>Octocat Plushie</h3>
-                <div><p>Price: 15 tickets</p>
-                <input type="number" value="0" id="octocat"></div>
+                <div>
+                    <p>Price: 15 tickets</p>
+                    <div>
+                        <button onclick="AddNumber('octocat')">+</button>
+                        <input type="number" value="0" id="octocat" readonly min="0" max="1">
+                        <button onclick="SubtractNumber('octocat')">-</button>
+                    </div>
+                </div>
             </div>
             <div class="illustration"><img src="assets/img/octocat.png" alt="octocat.png"></div>
         </div>
         <div class="option">
             <div class="description">
                 <h3>Wacom Intuos S</h3>
-                <div><p>Price: 25 tickets</p>
-                <input type="number" value="0" id="wacom"></div>
+                <div>
+                    <p>Price: 25 tickets</p>
+                    <div>
+                        <button onclick="AddNumber('wacom')">+</button>
+                        <input type="number" value="0" id="wacom" readonly min="0" max="1">
+                        <button onclick="SubtractNumber('wacom')">-</button>
+                    </div>
+                </div>
             </div>
             <div class="illustration"><img src="assets/img/wacom.png" alt="wacom.png"></div>
         </div>
         <div class="option">
             <div class="description">
                 <h3>Invertocat Backback MIIR</h3>
-                <div><p>Price: 50 tickets</p>
-                <input type="number" value="0" id="invertocat_backpack"></div>
+                <div>
+                    <p>Price: 50 tickets</p>
+                    <div>
+                        <button onclick="AddNumber('invertocat_backpack')">+</button>
+                        <input type="number" value="0" id="invertocat_backpack" readonly min="0" max="1">
+                        <button onclick="SubtractNumber('invertocat_backpack')">-</button>
+                    </div>
+                </div>
             </div>
             <div class="illustration"><img src="assets/img/invertocat_backpack.png" alt="invertocat_backpack.png"></div>
         </div>
         <div class="option">
             <div class="description">
                 <h3>Flipper Zero</h3>
-                <div><p>Price: 70 tickets</p>
-                <input type="number" value="0" id="flipper"></div>
+                <div>
+                    <p>Price: 70 tickets</p>
+                    <div>
+                        <button onclick="AddNumber('flipper')">+</button>
+                        <input type="number" value="0" id="flipper" readonly min="0" max="1">
+                        <button onclick="SubtractNumber('flipper')">-</button>
+                    </div>
+                </div>
             </div>
             <div class="illustration"><img src="assets/img/flipper.png" alt="flipper.png"></div>
         </div>
         <div class="option">
             <div class="description">
                 <h3>Mechanical Keyboard MX</h3>
-                <div><p>Price: 75 tickets</p>
-                <input type="number" value="0" id="mechanical_keyboard"></div>
+                <div>
+                    <p>Price: 75 tickets</p>
+                    <div>
+                        <button onclick="AddNumber('mechanical_keyboard')">+</button>
+                        <input type="number" value="0" id="mechanical_keyboard" readonly min="0" max="1">
+                        <button onclick="SubtractNumber('mechanical_keyboard')">-</button>
+                    </div>
+                </div>
             </div>
             <div class="illustration"><img src="assets/img/mechanical_keyboard.png" alt="mechanical_keyboard.png"></div>
         </div>
         <div class="option">
             <div class="description">
                 <h3>Framework factory seconds</h3>
-                <div><p>Price: 120 tickets</p>
-                <input type="number" value="0" id="framework"></div>
+                <div>
+                    <p>Price: 120 tickets</p>
+                    <div>
+                        <button onclick="AddNumber('framework')">+</button>
+                        <input type="number" value="0" id="framework" readonly min="0" max="1">
+                        <button onclick="SubtractNumber('framework')">-</button>
+                    </div>
+                </div>
             </div>
             <div class="illustration"><img src="assets/img/framework.png" alt="framework.png"></div>
         </div>
         <div class="option">
             <div class="description">
                 <h3>Prusa MINI+</h3>
-                <div><p>Price: 130 tickets</p>
-                <input type="number" value="0" id="prusa"></div>
+                <div>
+                    <p>Price: 130 tickets</p>
+                    <div>
+                        <button onclick="AddNumber('prusa')">+</button>
+                        <input type="number" value="0" id="prusa" readonly min="0" max="1">
+                        <button onclick="SubtractNumber('prusa')">-</button>
+                    </div>
+                </div>
             </div>
             <div class="illustration"><img src="assets/img/prusa.png" alt="prusa.png"></div>
         </div>
         <div class="option">
             <div class="description">
                 <h3>Bambu Lab A1 mini</h3>
-                <div><p>Price: 135 tickets</p>
-                <input type="number" value="0" id="bambu_lab"></div>
+                <div>
+                    <p>Price: 135 tickets</p>
+                    <div>
+                        <button onclick="AddNumber('bambu_lab')">+</button>
+                        <input type="number" value="0" id="bambu_lab" readonly min="0" max="1">
+                        <button onclick="SubtractNumber('bambu_lab')">-</button>
+                    </div>
+                </div>
             </div>
             <div class="illustration"><img src="assets/img/bambu_lab.png" alt="bambu_lab.png"></div>
         </div>
         <div class="option">
             <div class="description">
                 <h3>Framework 13 inch</h3>
-                <div><p>Price: 175 tickets</p>
-                <input type="number" value="0" id="framework13"></div>
+                <div>
+                    <p>Price: 175 tickets</p>
+                    <div>
+                        <button onclick="AddNumber('framework13')">+</button>
+                        <input type="number" value="0" id="framework13" readonly min="0" max="1">
+                        <button onclick="SubtractNumber('framework13')">-</button>
+                    </div>
+                </div>
             </div>
             <div class="illustration"><img src="assets/img/framework13.png" alt="framework13.png"></div>
         </div>
         <div class="option">
             <div class="description">
                 <h3>Quest 3</h3>
-                <div><p>Price: 200 tickets</p>
-                <input type="number" value="0" id="quest_3"></div>
+                <div>
+                    <p>Price: 200 tickets</p>
+                    <div>
+                        <button onclick="AddNumber('quest_3')">+</button>
+                        <input type="number" value="0" id="quest_3" readonly min="0" max="1">
+                        <button onclick="SubtractNumber('quest_3')">-</button>
+                    </div>
+                </div>
             </div>
             <div class="illustration"><img src="assets/img/quest_3.png" alt="quest_3.png"></div>
         </div>
         <div class="option">
             <div class="description">
                 <h3>Framework 16 inch</h3>
-                <div><p>Price: 400 tickets</p>
-                <input type="number" value="0" id="framework16"></div>
+                <div>
+                    <p>Price: 400 tickets</p>
+                    <div>
+                        <button onclick="AddNumber('framework16')">+</button>
+                        <input type="number" value="0" id="framework16" readonly min="0" max="1">
+                        <button onclick="SubtractNumber('framework16')">-</button>
+                    </div>
+                </div>
             </div>
             <div class="illustration"><img src="assets/img/framework16.png" alt="framework16.png"></div>
         </div>
         <div class="option">
             <div class="description">
                 <h3>MacBook Air M2</h3>
-                <div><p>Price: 400 tickets</p>
-                <input type="number" value="0" id="macbook"></div>
+                <div>
+                    <p>Price: 400 tickets</p>
+                    <div>
+                        <button onclick="AddNumber('macbook')">+</button>
+                        <input type="number" value="0" id="macbook" readonly min="0" max="1">
+                        <button onclick="SubtractNumber('macbook')">-</button>
+                    </div>
+                </div>
             </div>
             <div class="illustration"><img src="assets/img/macbook.png" alt="macbook.png"></div>
         </div>
@@ -223,8 +373,8 @@
         <h2>#4 Press the button to get the result</h2>
         <button id="calculate_button" onclick="CalculateHours()">Calculate</button>
     </div>
-    <div id="result">
-        <h2>You need <span id="total_tickets"></span> tickets, so you'll have to work <span id="hours_a_day"></span> hours a day to get everything you want!</h2>
+    <div id="result" style="display: none;">
+        <h2>You need <span id="total_tickets"></span> more tickets, so you'll have to work <span id="hours_a_day"></span> hours a day to get everything you want!</h2>
     </div>
 
     <script src="script.js"></script>

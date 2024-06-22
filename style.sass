@@ -45,6 +45,38 @@ p
     font-size: 18px
     font-weight: 500
 
+input
+    width: 40px
+    background-color: $light-yellow
+    border: 1px solid $light-blue
+    border-radius: 5px
+    padding: 5px
+    text-align: center
+    color: $light-blue
+
+button
+    background-color: $light-blue
+    border: none
+    border-radius: 5px
+    padding: 10px
+    text-align: center
+    color: $light-yellow
+    font-size: 20px
+    cursor: pointer
+
+    &:hover
+        background-color: $blue
+
+input[type=number]
+    &::-webkit-inner-spin-button, &::-webkit-outer-spin-button
+        -webkit-appearance: none
+        margin: 0
+
+        -moz-appearance: textfield
+
+input:focus
+    outline: none
+
 #options
     display: flex
     flex-direction: row
@@ -66,7 +98,7 @@ p
 
         margin: 20px
         padding: 20px
-        height: 450px
+        height: 500px
         width: 30%
 
         color: $white
@@ -93,16 +125,28 @@ p
                 width: 100%
                 margin-bottom: 10px
 
-            input
-                width: 40px
+                div
+                    justify-content: flex-end
+                    width: 40%
+
+            button
+                width: 25px
                 background-color: $light-yellow
                 border: none
                 border-radius: 5px
                 padding: 5px
+                text-align: center
                 color: $light-blue
 
-            input:focus
-                outline: none
+            input
+                width: 25px
+                background-color: $light-yellow
+                border: none
+                border-radius: 5px
+                padding: 5px
+                text-align: center
+                color: $light-blue
+                margin: 0 10px
 
         .illustration
             background-color: $light-yellow
@@ -119,3 +163,8 @@ p
                 width: 100%
                 height: 260px
                 border-radius: 20px
+
+.instructions
+    margin-bottom: 40px
+    h2
+        margin-bottom: 5px
