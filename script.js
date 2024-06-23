@@ -26,6 +26,38 @@ prices = {
     "macbook": 400
 }
 
+opinions = {
+    "nothing": ["Did you even select any products?"],
+    "easy": ["You can do this for sure", "Definitely achievable", "Easy peasy", "You could even get more"],
+    "medium": ["You can do this with some effort", "Definitely achievable"],
+    "hard": ["This is a bit challenging", "You can do this with some effort", "This would require some grinding"],
+    "very_hard": ["Good luck, what else can I say", "Unless you feel like grinding, this is basically impossible", "If I was you, I would choose less products"],
+    "insane": ["You must be insane"]
+}
+
+function ShowRacoon(hours_a_day) {
+    // document.getElementById("racoon").style = "display: block;";
+    if (hours_a_day <= 0) {
+        difficulty = "nothing";
+    }
+    else if (hours_a_day <= 1) {
+        difficulty = "easy";
+    }
+    else if (hours_a_day <= 3) {
+        difficulty = "medium";
+    }
+    else if (hours_a_day <= 5) {
+        difficulty = "hard";
+    }
+    else if (hours_a_day <= 12) {
+        difficulty = "very_hard";
+    }
+    else {
+        difficulty = "insane";
+    }
+    document.getElementById("opinion").innerHTML = opinions[difficulty][Math.floor(Math.random() * opinions[difficulty].length)];
+}
+
 function CalculateHours() {
     // get every input element and its price
     var requiredTickets = 0;
@@ -48,9 +80,11 @@ function CalculateHours() {
     // calculate hours
     var hours = requiredTickets / daysLeft;
     // display hours
-    document.getElementById("result").style = "display: block;";
+    document.getElementById("result").style = "display: flex;";
     document.getElementById("total_tickets").innerHTML = requiredTickets;
     document.getElementById("hours_a_day").innerHTML = hours.toFixed(2);
+
+    ShowRacoon(hours);
 }
 
 function AddNumber(id) {

@@ -52,6 +52,7 @@ input {
   padding: 5px;
   text-align: center;
   color: #0AAFB4;
+  font-family: "Open Sans", sans-serif;
 }
 
 button {
@@ -63,6 +64,7 @@ button {
   color: #FAEFD6;
   font-size: 20px;
   cursor: pointer;
+  font-family: "Open Sans", sans-serif;
 }
 button:hover {
   background-color: #09878B;
@@ -82,7 +84,7 @@ input:focus {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: 50px;
 }
 #options h2 {
@@ -98,7 +100,9 @@ input:focus {
   margin: 20px;
   padding: 20px;
   height: 500px;
-  width: 30%;
+  width: 45%;
+  max-width: 400px;
+  min-width: 280px;
   color: #ececec;
 }
 #options .option h3 {
@@ -127,7 +131,7 @@ input:focus {
   width: 40%;
 }
 #options .option .description button {
-  width: 25px;
+  width: 30px;
   background-color: #FAEFD6;
   border: none;
   border-radius: 5px;
@@ -136,13 +140,9 @@ input:focus {
   color: #0AAFB4;
 }
 #options .option .description input {
-  width: 25px;
-  background-color: #FAEFD6;
+  width: 30px;
   border: none;
-  border-radius: 5px;
-  padding: 5px;
   text-align: center;
-  color: #0AAFB4;
   margin: 0 10px;
 }
 #options .option .illustration {
@@ -167,6 +167,93 @@ input:focus {
 }
 .instructions h2 {
   margin-bottom: 5px;
+}
+
+#result {
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#result h2 {
+  width: 50%;
+  text-align: left;
+}
+
+#racoon {
+  position: relative;
+  width: 400px;
+}
+#racoon img {
+  width: 400px;
+  height: 100%;
+  object-fit: contain;
+}
+#racoon h3 {
+  position: absolute;
+  top: 2.3%;
+  left: 36.4%;
+  bottom: 45%;
+  right: 3.1%;
+  width: auto;
+  height: auto;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #ececec;
+}
+
+@media (max-width: 900px) {
+  #options {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #options .option {
+    width: 45%;
+    margin: 20px 0;
+  }
+  #result {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  #result h2 {
+    width: 100%;
+  }
+  #racoon {
+    width: 100%;
+  }
+  #racoon img {
+    width: 100%;
+  }
+  #racoon h3 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 16px;
+  }
+  #options {
+    flex-direction: column;
+    align-items: center;
+  }
+  #options .option {
+    width: 100%;
+    max-width: none;
+    margin: 20px 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
