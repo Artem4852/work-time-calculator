@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Work time calculator</title>
+</head>
+<body>
+    <h1>Work time calculator</h1>
+    <div id="options">
+        <h2>#1 Choose the products you want</h2>
+        {% for product in products %}
+        <div class="option">
+            <div class="description">
+                <h3>{{product.name}}</h3>
+                <div>
+                    <p>Price: {{product.price}} ticket{{"s" if product.price > 1 else ""}}</p>
+                    <div>
+                        <button id="calculate_button" onclick="AddNumber('{{product.id}}')">+</button>
+                        <input type="number" value="0" id="{{product.id}}" readonly min="0" max="{{product.max}}">
+                        <button id="calculate_button" onclick="SubtractNumber('{{product.id}}')">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="illustration"><img src="{{product.src}}" alt="{{product.name}}"></div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="instructions">
+        <h2>#2 Select how many tickets you've already got</h2>
+        <input type="number" id="tickets_available" value="0">
+    </div>
+    <div class="instructions">
+        <h2>#3.1 Select how many days you will not be able to work</h2>
+        <input type="number" id="days_absent" value="0">
+    </div>
+    <div class="instructions">
+        <h2>#3.2 Or select how hours a day you will be able to work</h2>
+        <input type="number" id="hours_a_day_possible" value="0">
+    </div>
+    <div class="instructions">
+        <h2>#4 Press the button to get the result</h2>
+        <button id="calculate_button" onclick="ShowResult()">Calculate</button>
+    </div>
+    <div id="result_everyday">
+        <h2>You need <span id="total_tickets"></span> more tickets, so you'll have to work <span id="hours_a_day"></span> hours a day to get everything you want by the end of the summer!</h2>
+        <div id="racoon">
+            <img src="/static/img/racoons_opinion.png" alt="racoon">
+            <h3 id="opinion"></h3>
+        </div>
+    </div>
+    <div id="result_hourly">
+        <h2 id="possible">You need <span id="total_tickets_possible"></span> more tickets. If you work <span id="hours_a_day_info_possible"></span> hours per day, you would be able to get everything you want by <span id="day"></span> <span id="month"></span>.</h2>
+        <h2 id="impossible">You need <span id="total_tickets_impossible"></span> more tickets. If you work <span id="hours_a_day_info_impossible"></span> hours per day, you would not be able to finish by the end of the summer!</h2>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

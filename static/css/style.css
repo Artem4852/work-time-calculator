@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Slackey";
-  src: url("assets/fonts/Slackey.ttf") format("truetype");
+  src: url("/static/fonts/Slackey.ttf") format("truetype");
 }
 * {
   padding: 0;
@@ -169,15 +169,26 @@ input:focus {
   margin-bottom: 5px;
 }
 
-#result {
+#result_everyday {
   display: none;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
+  margin-bottom: 50px;
 }
-#result h2 {
+#result_everyday h2 {
   width: 50%;
+  min-width: 300px;
   text-align: left;
+}
+
+#result_hourly {
+  display: none;
+}
+#result_hourly h2 {
+  width: 100%;
+  display: none;
 }
 
 #racoon {
