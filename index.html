@@ -3,384 +3,419 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./static/css/font_nobackend.css">
+    <link rel="stylesheet" href="./static/css/style.css">
     <title>Work time calculator</title>
 </head>
 <body>
     <h1>Work time calculator</h1>
     <div id="options">
         <h2>#1 Choose the products you want</h2>
+        
         <div class="option">
             <div class="description">
-                <h3>Pile of random stickers</h3>
+                <h3>Pile of stickers </h3>
                 <div>
                     <p>Price: 1 ticket</p>
                     <div>
-                        <button id="calculate_button" onclick="AddNumber('pile_of_stickers')">+</button>
-                        <input type="number" value="0" id="pile_of_stickers" readonly min="0" max="10">
-                        <button id="calculate_button" onclick="SubtractNumber('pile_of_stickers')">-</button>
+                        <button id="calculate_button" onclick="AddNumber('pile_of_stickers_')">+</button>
+                        <input type="number" value="0" id="pile_of_stickers_" readonly min="0" max="10">
+                        <button id="calculate_button" onclick="SubtractNumber('pile_of_stickers_')">-</button>
                     </div>
                 </div>
             </div>
-            <div class="illustration"><img src="assets/img/pile_of_stickers.png" alt="pile_of_stickers.png"></div>
+            <div class="illustration"><img src="https://cloud-c1gqq7ttf-hack-club-bot.vercel.app/0sticker_pile_2.png" alt="Pile of stickers "></div>
         </div>
+        
         <div class="option">
             <div class="description">
                 <h3>Sticker of your choice</h3>
                 <div>
                     <p>Price: 2 tickets</p>
                     <div>
-                        <button onclick="AddNumber('sticker')">+</button>
-                        <input type="number" value="0" id="sticker" readonly min="0" max="10">
-                        <button onclick="SubtractNumber('sticker')">-</button>
+                        <button id="calculate_button" onclick="AddNumber('sticker_of_your_choice')">+</button>
+                        <input type="number" value="0" id="sticker_of_your_choice" readonly min="0" max="10">
+                        <button id="calculate_button" onclick="SubtractNumber('sticker_of_your_choice')">-</button>
                     </div>
                 </div>
             </div>
-            <div class="illustration"><img src="assets/img/sticker.png" alt="sticker.png"></div>
+            <div class="illustration"><img src="https://cloud-50x4zfjwx-hack-club-bot.vercel.app/0enjoy_1.png" alt="Sticker of your choice"></div>
         </div>
+        
         <div class="option">
             <div class="description">
-                <h3>OpenAI credits</h3>
+                <h3>OpenAI credits </h3>
                 <div>
                     <p>Price: 4 tickets</p>
                     <div>
-                        <button onclick="AddNumber('openai_credits')">+</button>
-                        <input type="number" value="0" id="openai_credits" readonly min="0" max="1">
-                        <button onclick="SubtractNumber('openai_credits')">-</button>
+                        <button id="calculate_button" onclick="AddNumber('openai_credits_')">+</button>
+                        <input type="number" value="0" id="openai_credits_" readonly min="0" max="1">
+                        <button id="calculate_button" onclick="SubtractNumber('openai_credits_')">-</button>
                     </div>
                 </div>
             </div>
-            <div class="illustration"><img src="assets/img/openai_credits.png" alt="openai_credits.png"></div>
+            <div class="illustration"><img src="https://cloud-nozsvexvx-hack-club-bot.vercel.app/0universal_paperclips_title_screen.png" alt="OpenAI credits "></div>
         </div>
+        
         <div class="option">
             <div class="description">
                 <h3>Domain for 1 year</h3>
                 <div>
                     <p>Price: 4 tickets</p>
                     <div>
-                        <button onclick="AddNumber('domain')">+</button>
-                        <input type="number" value="0" id="domain" readonly min="0" max="10">
-                        <button onclick="SubtractNumber('domain')">-</button>
+                        <button id="calculate_button" onclick="AddNumber('domain_for_1_year')">+</button>
+                        <input type="number" value="0" id="domain_for_1_year" readonly min="0" max="10">
+                        <button id="calculate_button" onclick="SubtractNumber('domain_for_1_year')">-</button>
                     </div>
                 </div>
             </div>
-            <div class="illustration"><img src="assets/img/domain.png" alt="domain.png"></div>
+            <div class="illustration"><img src="https://cloud-5ttcbislu-hack-club-bot.vercel.app/2screenshot_2024-06-16_at_19.34.55.png" alt="Domain for 1 year"></div>
         </div>
+        
         <div class="option">
             <div class="description">
                 <h3>Notebook from GitHub</h3>
                 <div>
                     <p>Price: 5 tickets</p>
                     <div>
-                        <button onclick="AddNumber('notebook')">+</button>
-                        <input type="number" value="0" id="notebook" readonly min="0" max="1">
-                        <button onclick="SubtractNumber('notebook')">-</button>
+                        <button id="calculate_button" onclick="AddNumber('notebook_from_github')">+</button>
+                        <input type="number" value="0" id="notebook_from_github" readonly min="0" max="1">
+                        <button id="calculate_button" onclick="SubtractNumber('notebook_from_github')">-</button>
                     </div>
                 </div>
             </div>
-            <div class="illustration"><img src="assets/img/notebook.png" alt="notebook.png"></div>
+            <div class="illustration"><img src="https://cloud-2wpezbt6a-hack-club-bot.vercel.app/0notebook.png" alt="Notebook from GitHub"></div>
         </div>
+        
         <div class="option">
             <div class="description">
-                <h3>Logic Analyzer</h3>
+                <h3>Logic Analyzer </h3>
                 <div>
                     <p>Price: 5 tickets</p>
                     <div>
-                        <button onclick="AddNumber('logic_analyzer')">+</button>
-                        <input type="number" value="0" id="logic_analyzer" readonly min="0" max="5">
-                        <button onclick="SubtractNumber('logic_analyzer')">-</button>
+                        <button id="calculate_button" onclick="AddNumber('logic_analyzer_')">+</button>
+                        <input type="number" value="0" id="logic_analyzer_" readonly min="0" max="5">
+                        <button id="calculate_button" onclick="SubtractNumber('logic_analyzer_')">-</button>
                     </div>
                 </div>
             </div>
-            <div class="illustration"><img src="assets/img/logic_analyzer.png" alt="logic_analyzer.png"></div>
+            <div class="illustration"><img src="https://cloud-re8ou8f0i-hack-club-bot.vercel.app/0image.png" alt="Logic Analyzer "></div>
         </div>
+        
         <div class="option">
             <div class="description">
                 <h3>Breadboard + jumper wires</h3>
                 <div>
                     <p>Price: 6 tickets</p>
                     <div>
-                        <button onclick="AddNumber('breadboard')">+</button>
-                        <input type="number" value="0" id="breadboard" readonly min="0" max="10">
-                        <button onclick="SubtractNumber('breadboard')">-</button>
+                        <button id="calculate_button" onclick="AddNumber('breadboard_+_jumper_wires')">+</button>
+                        <input type="number" value="0" id="breadboard_+_jumper_wires" readonly min="0" max="10">
+                        <button id="calculate_button" onclick="SubtractNumber('breadboard_+_jumper_wires')">-</button>
                     </div>
                 </div>
             </div>
-            <div class="illustration"><img src="assets/img/breadboard.png" alt="breadboard.png"></div>
+            <div class="illustration"><img src="https://cloud-ogt9k4r4u-hack-club-bot.vercel.app/0breadboard.png" alt="Breadboard + jumper wires"></div>
         </div>
+        
         <div class="option">
             <div class="description">
-                <h3>Multimeter</h3>
+                <h3>Multimeter </h3>
                 <div>
                     <p>Price: 7 tickets</p>
                     <div>
-                        <button onclick="AddNumber('multimeter')">+</button>
-                        <input type="number" value="0" id="multimeter" readonly min="0" max="5">
-                        <button onclick="SubtractNumber('multimeter')">-</button>
+                        <button id="calculate_button" onclick="AddNumber('multimeter_')">+</button>
+                        <input type="number" value="0" id="multimeter_" readonly min="0" max="5">
+                        <button id="calculate_button" onclick="SubtractNumber('multimeter_')">-</button>
                     </div>
                 </div>
             </div>
-            <div class="illustration"><img src="assets/img/multimeter.png" alt="multimeter.png"></div>
+            <div class="illustration"><img src="https://cloud-fyxfbdwdl-hack-club-bot.vercel.app/0multimeter.png" alt="Multimeter "></div>
         </div>
+        
         <div class="option">
             <div class="description">
                 <h3>Arcade Ticket Counter (Timer)</h3>
                 <div>
                     <p>Price: 7 tickets</p>
                     <div>
-                        <button onclick="AddNumber('arcade_ticket_counter')">+</button>
-                        <input type="number" value="0" id="arcade_ticket_counter" readonly min="0" max="1">
-                        <button onclick="SubtractNumber('arcade_ticket_counter')">-</button>
+                        <button id="calculate_button" onclick="AddNumber('arcade_ticket_counter_(timer)')">+</button>
+                        <input type="number" value="0" id="arcade_ticket_counter_(timer)" readonly min="0" max="1">
+                        <button id="calculate_button" onclick="SubtractNumber('arcade_ticket_counter_(timer)')">-</button>
                     </div>
                 </div>
             </div>
-            <div class="illustration"><img src="assets/img/arcade_ticket_counter.png" alt="arcade_ticket_counter.png"></div>
+            <div class="illustration"><img src="https://cloud-for73aw9b-hack-club-bot.vercel.app/019719_3.png" alt="Arcade Ticket Counter (Timer)"></div>
         </div>
+        
         <div class="option">
             <div class="description">
                 <h3>Soldering iron + solder</h3>
                 <div>
                     <p>Price: 8 tickets</p>
                     <div>
-                        <button onclick="AddNumber('soldering_iron')">+</button>
-                        <input type="number" value="0" id="soldering_iron" readonly min="0" max="5">
-                        <button onclick="SubtractNumber('soldering_iron')">-</button>
+                        <button id="calculate_button" onclick="AddNumber('soldering_iron_+_solder')">+</button>
+                        <input type="number" value="0" id="soldering_iron_+_solder" readonly min="0" max="5">
+                        <button id="calculate_button" onclick="SubtractNumber('soldering_iron_+_solder')">-</button>
                     </div>
                 </div>
             </div>
-            <div class="illustration"><img src="assets/img/soldering_iron.png" alt="soldering_iron.png"></div>
+            <div class="illustration"><img src="https://cloud-amz50nt0a-hack-club-bot.vercel.app/0soldering_iron.png" alt="Soldering iron + solder"></div>
         </div>
+        
         <div class="option">
             <div class="description">
-                <h3>Pinecil</h3>
+                <h3>Pinecil </h3>
                 <div>
                     <p>Price: 14 tickets</p>
                     <div>
-                        <button onclick="AddNumber('pinecil')">+</button>
-                        <input type="number" value="0" id="pinecil" readonly min="0" max="1">
-                        <button onclick="SubtractNumber('pinecil')">-</button>
+                        <button id="calculate_button" onclick="AddNumber('pinecil_')">+</button>
+                        <input type="number" value="0" id="pinecil_" readonly min="0" max="1">
+                        <button id="calculate_button" onclick="SubtractNumber('pinecil_')">-</button>
                     </div>
                 </div>
             </div>
-            <div class="illustration"><img src="assets/img/pinecil.png" alt="pinecil.png"></div>
+            <div class="illustration"><img src="https://cloud-3lhacr9fo-hack-club-bot.vercel.app/061ix8eet_dl._ac_sx679_.png" alt="Pinecil "></div>
         </div>
+        
         <div class="option">
             <div class="description">
-                <h3>YubiKey</h3>
+                <h3>YubiKey </h3>
                 <div>
                     <p>Price: 15 tickets</p>
                     <div>
-                        <button onclick="AddNumber('yubikey')">+</button>
-                        <input type="number" value="0" id="yubikey" readonly min="0" max="5">
-                        <button onclick="SubtractNumber('yubikey')">-</button>
+                        <button id="calculate_button" onclick="AddNumber('yubikey_')">+</button>
+                        <input type="number" value="0" id="yubikey_" readonly min="0" max="5">
+                        <button id="calculate_button" onclick="SubtractNumber('yubikey_')">-</button>
                     </div>
                 </div>
             </div>
-            <div class="illustration"><img src="assets/img/yubikey.png" alt="yubikey.png"></div>
+            <div class="illustration"><img src="https://cloud-elfpck7gj-hack-club-bot.vercel.app/0screenshot_2024-06-14_at_07.42.35.png" alt="YubiKey "></div>
         </div>
+        
         <div class="option">
             <div class="description">
                 <h3>GitHub Keycaps x8</h3>
                 <div>
                     <p>Price: 15 tickets</p>
                     <div>
-                        <button onclick="AddNumber('github_keycaps')">+</button>
-                        <input type="number" value="0" id="github_keycaps" readonly min="0" max="1">
-                        <button onclick="SubtractNumber('github_keycaps')">-</button>
+                        <button id="calculate_button" onclick="AddNumber('github_keycaps_x8')">+</button>
+                        <input type="number" value="0" id="github_keycaps_x8" readonly min="0" max="1">
+                        <button id="calculate_button" onclick="SubtractNumber('github_keycaps_x8')">-</button>
                     </div>
                 </div>
             </div>
-            <div class="illustration"><img src="assets/img/github_keycaps.png" alt="github_keycaps.png"></div>
+            <div class="illustration"><img src="https://cloud-q3hnx73my-hack-club-bot.vercel.app/01542509_z_copy.png" alt="GitHub Keycaps x8"></div>
         </div>
+        
         <div class="option">
             <div class="description">
                 <h3>Octocat Plushie</h3>
                 <div>
                     <p>Price: 15 tickets</p>
                     <div>
-                        <button onclick="AddNumber('octocat')">+</button>
-                        <input type="number" value="0" id="octocat" readonly min="0" max="1">
-                        <button onclick="SubtractNumber('octocat')">-</button>
+                        <button id="calculate_button" onclick="AddNumber('octocat_plushie')">+</button>
+                        <input type="number" value="0" id="octocat_plushie" readonly min="0" max="1">
+                        <button id="calculate_button" onclick="SubtractNumber('octocat_plushie')">-</button>
                     </div>
                 </div>
             </div>
-            <div class="illustration"><img src="assets/img/octocat.png" alt="octocat.png"></div>
+            <div class="illustration"><img src="https://cloud-n716uf1pe-hack-club-bot.vercel.app/0gh_0008_z_dd7b_copy.png" alt="Octocat Plushie"></div>
         </div>
+        
         <div class="option">
             <div class="description">
                 <h3>Wacom Intuos S</h3>
                 <div>
                     <p>Price: 25 tickets</p>
                     <div>
-                        <button onclick="AddNumber('wacom')">+</button>
-                        <input type="number" value="0" id="wacom" readonly min="0" max="1">
-                        <button onclick="SubtractNumber('wacom')">-</button>
+                        <button id="calculate_button" onclick="AddNumber('wacom_intuos_s')">+</button>
+                        <input type="number" value="0" id="wacom_intuos_s" readonly min="0" max="1">
+                        <button id="calculate_button" onclick="SubtractNumber('wacom_intuos_s')">-</button>
                     </div>
                 </div>
             </div>
-            <div class="illustration"><img src="assets/img/wacom.png" alt="wacom.png"></div>
+            <div class="illustration"><img src="https://cloud-bj39a8875-hack-club-bot.vercel.app/061pz9ub2wul._ac_sx679_.png" alt="Wacom Intuos S"></div>
         </div>
+        
         <div class="option">
             <div class="description">
                 <h3>Invertocat Backback MIIR</h3>
                 <div>
                     <p>Price: 50 tickets</p>
                     <div>
-                        <button onclick="AddNumber('invertocat_backpack')">+</button>
-                        <input type="number" value="0" id="invertocat_backpack" readonly min="0" max="1">
-                        <button onclick="SubtractNumber('invertocat_backpack')">-</button>
+                        <button id="calculate_button" onclick="AddNumber('invertocat_backback_miir')">+</button>
+                        <input type="number" value="0" id="invertocat_backback_miir" readonly min="0" max="1">
+                        <button id="calculate_button" onclick="SubtractNumber('invertocat_backback_miir')">-</button>
                     </div>
                 </div>
             </div>
-            <div class="illustration"><img src="assets/img/invertocat_backpack.png" alt="invertocat_backpack.png"></div>
+            <div class="illustration"><img src="https://cloud-2wpezbt6a-hack-club-bot.vercel.app/1miir.png" alt="Invertocat Backback MIIR"></div>
         </div>
+        
         <div class="option">
             <div class="description">
                 <h3>Flipper Zero</h3>
                 <div>
                     <p>Price: 70 tickets</p>
                     <div>
-                        <button onclick="AddNumber('flipper')">+</button>
-                        <input type="number" value="0" id="flipper" readonly min="0" max="1">
-                        <button onclick="SubtractNumber('flipper')">-</button>
+                        <button id="calculate_button" onclick="AddNumber('flipper_zero')">+</button>
+                        <input type="number" value="0" id="flipper_zero" readonly min="0" max="1">
+                        <button id="calculate_button" onclick="SubtractNumber('flipper_zero')">-</button>
                     </div>
                 </div>
             </div>
-            <div class="illustration"><img src="assets/img/flipper.png" alt="flipper.png"></div>
+            <div class="illustration"><img src="https://cloud-p2gdpsmd3-hack-club-bot.vercel.app/0top.png" alt="Flipper Zero"></div>
         </div>
+        
         <div class="option">
             <div class="description">
                 <h3>Mechanical Keyboard MX</h3>
                 <div>
                     <p>Price: 75 tickets</p>
                     <div>
-                        <button onclick="AddNumber('mechanical_keyboard')">+</button>
-                        <input type="number" value="0" id="mechanical_keyboard" readonly min="0" max="1">
-                        <button onclick="SubtractNumber('mechanical_keyboard')">-</button>
+                        <button id="calculate_button" onclick="AddNumber('mechanical_keyboard_mx')">+</button>
+                        <input type="number" value="0" id="mechanical_keyboard_mx" readonly min="0" max="1">
+                        <button id="calculate_button" onclick="SubtractNumber('mechanical_keyboard_mx')">-</button>
                     </div>
                 </div>
             </div>
-            <div class="illustration"><img src="assets/img/mechanical_keyboard.png" alt="mechanical_keyboard.png"></div>
+            <div class="illustration"><img src="https://cloud-gt96uxjmh-hack-club-bot.vercel.app/061__ok6aqtl._ac_uf894_1000_ql80_.png" alt="Mechanical Keyboard MX"></div>
         </div>
+        
         <div class="option">
             <div class="description">
                 <h3>Framework factory seconds</h3>
                 <div>
                     <p>Price: 120 tickets</p>
                     <div>
-                        <button onclick="AddNumber('framework')">+</button>
-                        <input type="number" value="0" id="framework" readonly min="0" max="1">
-                        <button onclick="SubtractNumber('framework')">-</button>
+                        <button id="calculate_button" onclick="AddNumber('framework_factory_seconds')">+</button>
+                        <input type="number" value="0" id="framework_factory_seconds" readonly min="0" max="1">
+                        <button id="calculate_button" onclick="SubtractNumber('framework_factory_seconds')">-</button>
                     </div>
                 </div>
             </div>
-            <div class="illustration"><img src="assets/img/framework.png" alt="framework.png"></div>
+            <div class="illustration"><img src="https://cloud-elfpck7gj-hack-club-bot.vercel.app/1screenshot_2024-06-14_at_07.39.22.png" alt="Framework factory seconds"></div>
         </div>
+        
         <div class="option">
             <div class="description">
                 <h3>Prusa MINI+</h3>
                 <div>
                     <p>Price: 130 tickets</p>
                     <div>
-                        <button onclick="AddNumber('prusa')">+</button>
-                        <input type="number" value="0" id="prusa" readonly min="0" max="1">
-                        <button onclick="SubtractNumber('prusa')">-</button>
+                        <button id="calculate_button" onclick="AddNumber('prusa_mini+')">+</button>
+                        <input type="number" value="0" id="prusa_mini+" readonly min="0" max="1">
+                        <button id="calculate_button" onclick="SubtractNumber('prusa_mini+')">-</button>
                     </div>
                 </div>
             </div>
-            <div class="illustration"><img src="assets/img/prusa.png" alt="prusa.png"></div>
+            <div class="illustration"><img src="https://cloud-cqnd9gu78-hack-club-bot.vercel.app/1prusa.png" alt="Prusa MINI+"></div>
         </div>
+        
         <div class="option">
             <div class="description">
                 <h3>Bambu Lab A1 mini</h3>
                 <div>
                     <p>Price: 135 tickets</p>
                     <div>
-                        <button onclick="AddNumber('bambu_lab')">+</button>
-                        <input type="number" value="0" id="bambu_lab" readonly min="0" max="1">
-                        <button onclick="SubtractNumber('bambu_lab')">-</button>
+                        <button id="calculate_button" onclick="AddNumber('bambu_lab_a1_mini')">+</button>
+                        <input type="number" value="0" id="bambu_lab_a1_mini" readonly min="0" max="1">
+                        <button id="calculate_button" onclick="SubtractNumber('bambu_lab_a1_mini')">-</button>
                     </div>
                 </div>
             </div>
-            <div class="illustration"><img src="assets/img/bambu_lab.png" alt="bambu_lab.png"></div>
+            <div class="illustration"><img src="https://cloud-n8ijhwk64-hack-club-bot.vercel.app/0a1_mini.png" alt="Bambu Lab A1 mini"></div>
         </div>
+        
         <div class="option">
             <div class="description">
                 <h3>Framework 13 inch</h3>
                 <div>
                     <p>Price: 175 tickets</p>
                     <div>
-                        <button onclick="AddNumber('framework13')">+</button>
-                        <input type="number" value="0" id="framework13" readonly min="0" max="1">
-                        <button onclick="SubtractNumber('framework13')">-</button>
+                        <button id="calculate_button" onclick="AddNumber('framework_13_inch')">+</button>
+                        <input type="number" value="0" id="framework_13_inch" readonly min="0" max="1">
+                        <button id="calculate_button" onclick="SubtractNumber('framework_13_inch')">-</button>
                     </div>
                 </div>
             </div>
-            <div class="illustration"><img src="assets/img/framework13.png" alt="framework13.png"></div>
+            <div class="illustration"><img src="https://cloud-g0bjmr0sz-hack-club-bot.vercel.app/013in.png" alt="Framework 13 inch"></div>
         </div>
+        
         <div class="option">
             <div class="description">
-                <h3>Quest 3</h3>
+                <h3>Quest 3 </h3>
                 <div>
                     <p>Price: 200 tickets</p>
                     <div>
-                        <button onclick="AddNumber('quest_3')">+</button>
-                        <input type="number" value="0" id="quest_3" readonly min="0" max="1">
-                        <button onclick="SubtractNumber('quest_3')">-</button>
+                        <button id="calculate_button" onclick="AddNumber('quest_3_')">+</button>
+                        <input type="number" value="0" id="quest_3_" readonly min="0" max="1">
+                        <button id="calculate_button" onclick="SubtractNumber('quest_3_')">-</button>
                     </div>
                 </div>
             </div>
-            <div class="illustration"><img src="assets/img/quest_3.png" alt="quest_3.png"></div>
+            <div class="illustration"><img src="https://cloud-7x2qyu0b9-hack-club-bot.vercel.app/0screenshot_2024-06-14_at_08.46.20.png" alt="Quest 3 "></div>
         </div>
+        
         <div class="option">
             <div class="description">
                 <h3>Framework 16 inch</h3>
                 <div>
                     <p>Price: 400 tickets</p>
                     <div>
-                        <button onclick="AddNumber('framework16')">+</button>
-                        <input type="number" value="0" id="framework16" readonly min="0" max="1">
-                        <button onclick="SubtractNumber('framework16')">-</button>
+                        <button id="calculate_button" onclick="AddNumber('framework_16_inch')">+</button>
+                        <input type="number" value="0" id="framework_16_inch" readonly min="0" max="1">
+                        <button id="calculate_button" onclick="SubtractNumber('framework_16_inch')">-</button>
                     </div>
                 </div>
             </div>
-            <div class="illustration"><img src="assets/img/framework16.png" alt="framework16.png"></div>
+            <div class="illustration"><img src="https://cloud-cqnd9gu78-hack-club-bot.vercel.app/0framework.png" alt="Framework 16 inch"></div>
         </div>
+        
         <div class="option">
             <div class="description">
                 <h3>MacBook Air M2</h3>
                 <div>
                     <p>Price: 400 tickets</p>
                     <div>
-                        <button onclick="AddNumber('macbook')">+</button>
-                        <input type="number" value="0" id="macbook" readonly min="0" max="1">
-                        <button onclick="SubtractNumber('macbook')">-</button>
+                        <button id="calculate_button" onclick="AddNumber('macbook_air_m2')">+</button>
+                        <input type="number" value="0" id="macbook_air_m2" readonly min="0" max="1">
+                        <button id="calculate_button" onclick="SubtractNumber('macbook_air_m2')">-</button>
                     </div>
                 </div>
             </div>
-            <div class="illustration"><img src="assets/img/macbook.png" alt="macbook.png"></div>
+            <div class="illustration"><img src="https://cloud-9zwbzfbtw-hack-club-bot.vercel.app/00image_from_ios-removebg-preview.png" alt="MacBook Air M2"></div>
         </div>
+        
     </div>
     <div class="instructions">
         <h2>#2 Select how many tickets you've already got</h2>
         <input type="number" id="tickets_available" value="0">
     </div>
     <div class="instructions">
-        <h2>#3 Select how many days you will not be able to work</h2>
+        <h2>#3.1 Select how many days you will not be able to work</h2>
         <input type="number" id="days_absent" value="0">
     </div>
     <div class="instructions">
-        <h2>#4 Press the button to get the result</h2>
-        <button id="calculate_button" onclick="CalculateHours()">Calculate</button>
+        <h2>#3.2 Or select how many hours a day you will be able to work</h2>
+        <input type="number" id="hours_a_day_possible" value="0">
     </div>
-    <div id="result">
-        <h2>You need <span id="total_tickets"></span> more tickets, so you'll have to work <span id="hours_a_day"></span> hours a day to get everything you want!</h2>
+    <div class="instructions">
+        <h2>#4 Press the button to get the result</h2>
+        <button id="calculate_button" onclick="ShowResult()">Calculate</button>
+    </div>
+    <div id="result_everyday">
+        <h2>You need <span id="total_tickets"></span> more tickets, so you'll have to work <span id="hours_a_day"></span> hours a day to get everything you want by the end of the summer!</h2>
         <div id="racoon">
-            <img src="assets/img/racoons_opinion.png" alt="racoon">
+            <img src="./static/img/racoons_opinion.png" alt="racoon">
             <h3 id="opinion"></h3>
         </div>
     </div>
+    <div id="result_hourly">
+        <h2 id="possible">You need <span id="total_tickets_possible"></span> more tickets. If you work <span id="hours_a_day_info_possible"></span> hours per day, you would be able to get everything you want by <span id="day"></span> <span id="month"></span>.</h2>
+        <h2 id="impossible">You need <span id="total_tickets_impossible"></span> more tickets. If you work <span id="hours_a_day_info_impossible"></span> hours per day, you would not be able to finish by the end of the summer!</h2>
+    </div>
 
-    <script src="script.js"></script>
+    <script src="./static/js/script.js"></script>
 </body>
 </html>

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <title>Work time calculator</title>
 </head>
@@ -36,7 +37,7 @@
         <input type="number" id="days_absent" value="0">
     </div>
     <div class="instructions">
-        <h2>#3.2 Or select how hours a day you will be able to work</h2>
+        <h2>#3.2 Or select how many hours a day you will be able to work</h2>
         <input type="number" id="hours_a_day_possible" value="0">
     </div>
     <div class="instructions">

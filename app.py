@@ -33,4 +33,4 @@ def home():
     return render_template('indexTemplate.html', products=products)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False, port=5050)
