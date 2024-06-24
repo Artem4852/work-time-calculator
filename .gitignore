@@ -1,3 +1,4 @@
 extract_products.py
 products.json
 .env
+.vercel
