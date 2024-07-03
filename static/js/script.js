@@ -8,18 +8,22 @@ prices = {
     "breadboard_+_jumper_wires": 6,
     "multimeter_": 7,
     "arcade_ticket_counter_(timer)": 7,
+    "yubikey_": 8,
     "soldering_iron_+_solder": 8,
+    "raspberry_pi_zero_2_w": 9,
     "pinecil_": 14,
-    "yubikey_": 15,
     "github_keycaps_x8": 15,
+    "wacom_intuos_s": 15,
     "octocat_plushie": 15,
-    "wacom_intuos_s": 25,
     "invertocat_backback_miir": 50,
+    "keychron_k6_pro": 50,
     "flipper_zero": 70,
-    "mechanical_keyboard_mx": 75,
+    "logitech_mx_mechanical": 75,
+    "wacom_one_display": 90,
     "framework_factory_seconds": 120,
     "prusa_mini+": 130,
     "bambu_lab_a1_mini": 135,
+    "ipad_10th_gen_+_1st_gen_apple_pencil": 160,
     "framework_13_inch": 175,
     "quest_3_": 200,
     "framework_16_inch": 400,
@@ -109,9 +113,12 @@ function ShowResult() {
     for (var i = 0; i < inputElements.length; i++) {
         var element = inputElements[i];
         if (element.id != "tickets_available" && element.id != "days_absent" && element.id != "hours_a_day_possible") {
+            console.log(element.id, element.value, prices[element.id])
+            console.log(requiredTickets)
             requiredTickets += element.value * prices[element.id];
         }
     }
+    console.log(requiredTickets)
     // subtract available tickets
     requiredTickets -= document.getElementById("tickets_available").value;
 

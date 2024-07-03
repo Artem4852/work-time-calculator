@@ -34,3 +34,8 @@ def home():
 
 if __name__ == "__main__":
     app.run(debug=False, port=5050)
+    # products = scrape_products()
+    # print("prices = {")
+    # for product in products:
+    #     print(f'"{product["id"]}": {product["price"]},')
+    # print("}")
