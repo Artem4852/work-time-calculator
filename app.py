@@ -4,7 +4,7 @@ import requests, json
 user_id = "recLx2cfKI9bH3hId"
 
 def scrape_products():
-    url = f"https://hackclub.com/_next/data/vZ7Y_cWVMO57JkDZ9zlBN/arcade/{user_id}/shop.json?userAirtableID={user_id}"
+    url = f"https://hackclub.com/_next/data/u5a0lJC0xX1_XKg0J1bHJ/arcade/{user_id}/shop.json?userAirtableID={user_id}"
 
     response = requests.get(url)
     products = response.json()
